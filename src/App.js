@@ -22,9 +22,9 @@ function App() {
           <Switch>
               <Route exact path="/" component={Games} />
               <Route exact path="/top-streams" component={TopStreams} />
-              <Route exact path="/live/:slug" component={Live} />
-              <Route exact path="/game/:slug" component={GameStreams} />
-              <Route exact path="/resultats/:slug" component={Resultats} />
+              <Route path="/live/:slug" component={Live} />
+              <Route path="/game/:slug" component={GameStreams} />
+              <Route path="/resultats/:slug" component={Resultats} />
               <Route exact path="/resultats/" component={Erreur} />
 
           </Switch>
